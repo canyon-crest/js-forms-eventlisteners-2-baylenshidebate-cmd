@@ -104,7 +104,7 @@ let customerName = document.getElementById("myInput").value.trim();
 //      Example: "Alice, your total is $13.50"
 //      If name is empty, use "Customer" as the default.
 document.getElementById("myPara").innerHTML = customerName + ", your total is $" + total.toFixed(2);
-});
+};
 
 // STEP 4: Get the "Clear" button by ID ("clearBtn")
 //         Add a click event listener.
