@@ -29,7 +29,9 @@
 //
 //         Example: "hello" → "HELLO!"
 document.getElementById('btnShout').addEventListener('click', function()){
-    outShout.innerHtml = shoutInput.value.toUpperCase() + "!";
+    let text = document.getElementById('ShoutInput').value;
+    let result = text.toUpperCase() + "!";
+    document.getElementById('outshout').innerHTML = result;
 }
 
 // ============================================
