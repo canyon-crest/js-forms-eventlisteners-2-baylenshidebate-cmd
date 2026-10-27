@@ -14,9 +14,7 @@
 // ============================================
 // When the user types text and clicks "Shout",
 // display the text in ALL CAPS with "!" at the end.
-document.getElementById('btnShout').addEventListener('click', function()){
-    outShout.innerHtml = shoutInput.value.toUpperCase();
-}
+
 // STEP 1: Get the "Shout" button by its ID ("btnShout")
 //         using document.getElementById()
 
@@ -30,7 +28,9 @@ document.getElementById('btnShout').addEventListener('click', function()){
 //            using .innerHTML
 //
 //         Example: "hello" → "HELLO!"
-
+document.getElementById('btnShout').addEventListener('click', function()){
+    outShout.innerHtml = shoutInput.value.toUpperCase();
+}
 
 // ============================================
 //  MAIN: Pizza Builder
