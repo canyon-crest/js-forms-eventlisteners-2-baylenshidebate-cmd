@@ -109,8 +109,18 @@ document.getElementById("myPara").innerHTML = customerName + ", your total is $"
 // STEP 4: Get the "Clear" button by ID ("clearBtn")
 //         Add a click event listener.
 //         Inside the listener:
+document.getElementById('clearBtn').addEventListener('click', function() {
 //         a) Set the name input value to ""
+document.getElementById("myInput").value = "";
 //         b) Set the Large radio (id "r3") to checked = true
+document.getElementById("r3").checked = true;
 //         c) Uncheck ALL topping checkboxes (loop through them)
+let checkboxes = document.getElementsByName("cb");
+    for (let i = 0; i < checkboxes.length; i++) {
+        checkboxes[i].checked = false;
+    }
 //         d) Set the service dropdown value to "dinein"
+document.getElementById("serviceSelect").value = "dinein";
 //         e) Set the output paragraph innerHTML to ""
+document.getElementById("myPara").innerHTML = "";
+});
